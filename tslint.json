@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "import-name": [false],
+    "jsx-no-lambda": [false],
+    "import-sources-order": ["any"],
+    "no-implicit-dependencies": [false, "dev", ["@App", "@App/Shared"]],
+    "no-submodule-imports": [false],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "object-shorthand-properties-first": [false],
+    "object-literal-sort-keys": [false]
+  },
+  "linterOptions": {
+    "exclude": ["config/**/*", "node_modules/**/*", "fakerailsserver/**/*"]
+  }
+}

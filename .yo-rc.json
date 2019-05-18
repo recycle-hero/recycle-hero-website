@@ -1,0 +1,9 @@
+{
+  "generator-nextjs-typescript-antd": {
+    "promptValues": {
+      "displayName": "recycling hero",
+      "fullname": "Jeremy Nagel",
+      "email": "jeremymnagel@gmail.com"
+    }
+  }
+}
