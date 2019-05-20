@@ -54,7 +54,7 @@ const chartOptions = {
 export function ContaminantChart() {
   return (
     <Fragment>
-      <Bar data={chartData} width={100} height={50} options={chartOptions} />
+      <Bar data={chartData} width={30} height={40} options={chartOptions} />
     </Fragment>
   );
 }

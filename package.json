@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "now-build": "next build",
+    "test": "TZ=Australia/Sydney jest --env=jsdom --setupTestFrameworkScriptFile=./setupTests.ts --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "@emotion/babel-preset-css-prop": "^10.0.9",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
+    "@types/node": "^12.0.2",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "antd": "^3.18.1",
@@ -24,6 +27,8 @@
     "apollo-link-http": "^1.5.14",
     "apollo-link-ws": "^1.0.17",
     "apollo-utilities": "^1.2.1",
+    "aws-appsync": "^1.8.0",
+    "aws-appsync-react": "^1.2.8",
     "chart.js": "^2.8.0",
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
@@ -33,13 +38,30 @@
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-apollo": "^2.5.5",
+    "react-bounding-box": "^0.3.2",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
     "react-emotion": "^10.0.0",
+    "redux-persist": "^5.10.0",
     "subscriptions-transport-ws": "^0.9.16",
     "ws": "^7.0.0"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.11.2"
+    "@types/jest": "^24.0.13",
+    "babel-plugin-import": "^1.11.2",
+    "babel-polyfill": "^6.26.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "jest-canvas-mock": "^2.1.0",
+    "jest-emotion": "^10.0.11",
+    "react-cosmos": "^4.8.1",
+    "react-cosmos-apollo-proxy": "^4.8.2",
+    "react-cosmos-test": "^4.8.2",
+    "react-test-renderer": "^16.8.6",
+    "ts-jest": "^24.0.2",
+    "waait": "^1.0.4"
   }
 }

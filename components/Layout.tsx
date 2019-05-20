@@ -5,8 +5,6 @@ import "antd/dist/antd.css";
 import { Icon, Layout as AntLayout, Menu, Typography } from "antd";
 const { Header, Content, Footer } = AntLayout;
 
-const { Title } = Typography;
-
 import styled from "@emotion/styled";
 
 const MenuItemWithPadding = styled(Menu.Item)`
@@ -51,6 +49,14 @@ export const Layout = ({ children, title, currentPage }) => (
             </div>
           </Link>
         </MenuItemWithPadding>
+        <MenuItemWithPadding key="classify">
+          <Link href="/classify-images">
+            <div>
+              <Icon type="help" />
+              Help Train
+            </div>
+          </Link>
+        </MenuItemWithPadding>
         <MenuItemWithPadding key="contact">
           <Link href="/contact">
             <div>
@@ -64,6 +70,6 @@ export const Layout = ({ children, title, currentPage }) => (
 
     <Content style={{ padding: "50px" }}>{children}</Content>
 
-    <Footer>{"I'm here to stay"}</Footer>
+    <Footer>Recycle Hero - Made with love in Sydney</Footer>
   </div>
 );
