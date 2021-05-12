@@ -29,7 +29,7 @@
     "apollo-utilities": "^1.2.1",
     "aws-appsync": "^1.8.0",
     "aws-appsync-react": "^1.2.8",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
     "generator-nextjs-typescript-antd": "^1.0.4",
